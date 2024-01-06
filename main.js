@@ -218,8 +218,7 @@ function filtrarStock(){
     const agregarBtn = document.getElementById("agregarAlimento")
     agregarBtn.addEventListener("click",agregarAlimento)
 
-
-    let url = "https://pokeapi.co/api/v2/pokemon?limit=6"
+    let url = "https://pokeapi.co/api/v2/pokemon?limit=1"
  
     const pokemonContainer = document.getElementById("pokemon-container")
 
@@ -247,6 +246,25 @@ function filtrarStock(){
         console.error("Es incorrecto")
        })
       
+    })
+
+ 
+    fetch("productos.json")
+    .then( (response)=> response.json())
+    .then( data=>{
+        const productos = data.productos
+        const productosContainer = document.getElementById("producto-container")
+        productos.forEach( producto =>{
+            const productosElement = document.createElement("p")
+            productosElement.textContent = `Nombre: ${producto.nombre}, Precio:${producto.precio} `
+            productosContainer.appendChild(productosElement)
+        })
+
+
+    })
+    .catch (error=>{
+        console.error("valores invalidos")
+
     })
 
  

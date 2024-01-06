@@ -1,0 +1,44 @@
+{
+    "productos":
+    [
+        {
+         "nombre": "correa",
+         "precio": 1000, 
+         "cantidad":80
+        },
+    
+        {
+        "nombre": "juguete", 
+        "precio": 500, 
+        "cantidad":150},
+    
+        {
+         "nombre": "ropa",
+         "precio":2500, 
+         "cantidad":200},
+    
+        {
+         "nombre": "pipetas",
+         "precio":850, 
+         "cantidad":54},
+    
+        {
+         "nombre": "huesos",
+         "precio":140, 
+         "cantidad":32},
+    
+        {
+        "nombre":"mordillos",
+        "precio":150,
+        "cantidad":35},
+    
+        {
+        "nombre": "pastillas",
+        "precio":350,
+        "cantidad": 150}
+    
+    ]
+}
+   
+
+
